@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import MainLayout from '../components/layout/MainLayout';
-import { Star, Clock, ArrowRight, Heart, Camera, MapPin, Users, Calendar, Check } from 'lucide-react';
+import { Star, Clock, ArrowRight, Camera, Users, Calendar, Check } from 'lucide-react';
 
 const PackagesPage: React.FC = () => {
   const [selectedDuration, setSelectedDuration] = useState('All');
@@ -33,7 +33,7 @@ const PackagesPage: React.FC = () => {
       bestFor: 'Solo travelers, couples, history enthusiasts',
       itinerary: 'Day 1: Pick up from Colombo/Airport. Drive to Dambulla Cave Temple (UNESCO World Heritage Site). Afternoon village tour or elephant safari at a nearby national park (Minneriya or Kaudulla). Overnight stay in Sigiriya/Dambulla. Day 2: Early morning climb of Sigiriya Rock Fortress (UNESCO site). Return drive to Colombo/Airport.',
       distance: 'Approx. 170 km (4-5 hours one way)',
-      vehicles: 'Sedan Car (1-2 people) or Mini Van (3-5 people)'
+      vehicles: 'Sedan Car (1-2 people) or Mini Van (3-5 people)',
     },
     {
       id: 'kandy-tea-country',
@@ -280,11 +280,7 @@ const PackagesPage: React.FC = () => {
                     LUXURY
                   </div>
                 )}
-                {pkg.family && (
-                  <div className="absolute top-4 left-4 z-20 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold">
-                    FAMILY FRIENDLY
-                  </div>
-                )}
+       
 
                 {/* Large Image */}
                 <div className="relative h-64 overflow-hidden">
