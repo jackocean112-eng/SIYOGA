@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MainLayout from '../components/layout/MainLayout';
-import { Calendar, Users, CreditCard, Shield, Check, Star, ArrowRight, Clock, MapPin } from 'lucide-react';
+import { Users, CreditCard, Shield, Check, Star, ArrowRight, Clock, MapPin } from 'lucide-react';
 
 const BookNowPage: React.FC = () => {
   const [selectedPackage, setSelectedPackage] = useState('');

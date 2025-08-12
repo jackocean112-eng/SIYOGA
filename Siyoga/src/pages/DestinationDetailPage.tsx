@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import MainLayout from '../components/layout/MainLayout';
-import { ArrowLeft, Clock, MapPin, Star, Camera, Users, Calendar, Heart, Share2, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Clock, MapPin, Star, Calendar, Heart, Share2, ChevronRight } from 'lucide-react';
 
 const DestinationDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
